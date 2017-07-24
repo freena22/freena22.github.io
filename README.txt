@@ -1,1 +1,1 @@
-GitHub Host for my Fortfolio: http://freena22.github.io
+GitHub Host for my Portfolio: http://freena22.github.io
