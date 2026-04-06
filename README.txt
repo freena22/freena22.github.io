@@ -1,1 +1,0 @@
-GitHub Host for my Portfolio: http://freena22.github.io
