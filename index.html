@@ -223,6 +223,28 @@
     opacity: 0.6;
   }
 
+  .project-preview {
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: var(--bg-primary);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.3s;
+  }
+
+  .project-card:hover .project-preview img {
+    transform: scale(1.03);
+  }
+
   .project-top {
     display: flex;
     justify-content: space-between;
@@ -368,6 +390,9 @@
 
     <!-- MMM Project - Live -->
     <a class="project-card" href="https://freena22.github.io/marketing-mix-model/" target="_blank">
+      <div class="project-preview">
+        <img src="shoots/mmm-preview.png" alt="Marketing Mix Model dashboard preview" loading="lazy">
+      </div>
       <div class="project-top">
         <div>
           <div class="project-title">Marketing Mix Model — ShopNova</div>
@@ -390,6 +415,9 @@
 
     <!-- Experimentation Playbook - Live -->
     <a class="project-card" href="https://freena22.github.io/experimentation-playbook/" target="_blank">
+      <div class="project-preview">
+        <img src="shoots/ab-preview.png" alt="Experimentation Playbook dashboard preview" loading="lazy">
+      </div>
       <div class="project-top">
         <div>
           <div class="project-title">Experimentation Playbook — LinguaLeap</div>
@@ -410,18 +438,24 @@
       </div>
     </a>
 
-    <!-- Coming Soon -->
+    <!-- LTV/CAC - Coming Soon -->
     <div class="project-card">
+      <div class="project-preview">
+        <img src="shoots/ltv-preview.png" alt="LTV/CAC Modeling coming soon" loading="lazy">
+      </div>
       <div class="project-top">
         <div>
-          <div class="project-title">Coming Soon</div>
+          <div class="project-title">LTV/CAC Modeling</div>
           <div class="project-subtitle">
-            New project in progress — stay tuned.
+            Customer lifetime value prediction and acquisition cost optimization — building the unit economics foundation for sustainable growth decisions.
           </div>
         </div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;">
         <div class="project-tags">
+          <span class="tag">LTV Prediction</span>
+          <span class="tag">CAC Analysis</span>
+          <span class="tag">Unit Economics</span>
         </div>
         <span class="project-status coming">In Progress</span>
       </div>
